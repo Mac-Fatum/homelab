@@ -21,5 +21,4 @@ sudo apt install wazuh-manager wazuh-indexer wazuh-dashboard -y
 ```bash
 cd /usr/share/wazuh-indexer/plugins/opensearch-security/tools/
 sudo ./wazuh-certs-tool.sh -A
-sudo cp /tmp/wazuh-certificates/* /etc/wazuh-indexer/certs/
 ```
