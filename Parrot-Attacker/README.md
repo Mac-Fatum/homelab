@@ -3,7 +3,7 @@
 
 #### `Parrot-Attacker/README.md`
 
-```markdown
+
 # Parrot — атакующая машина
 
 ## IP-адрес
