@@ -3,7 +3,7 @@
 
 #### `Windows-Target/README.md`
 
-```markdown
+
 # Windows — целевая машина (жертва)
 
 ## IP-адрес
