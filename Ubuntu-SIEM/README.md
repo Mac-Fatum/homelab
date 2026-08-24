@@ -15,3 +15,8 @@ curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo gpg --dearmor | sudo
 echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
 sudo apt update
 sudo apt install wazuh-manager wazuh-indexer wazuh-dashboard -y
+
+## Генерация сертификатов
+cd /usr/share/wazuh-indexer/plugins/opensearch-security/tools/
+sudo ./wazuh-certs-tool.sh -A
+sudo cp /tmp/wazuh-certificates/* /etc/wazuh-indexer/certs/
